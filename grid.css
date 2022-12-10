@@ -1,0 +1,17 @@
+main{
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 0.5fr ;
+  grid-template-areas: 
+  'left maincnt right';
+}
+leftside{
+  grid-area: left;
+  background-color: rgba(255, 255, 255, 0.363);
+}
+maincontent{
+  grid-area: maincnt;
+}
+rightside{
+  grid-area: right;
+  background-color: rgba(255, 255, 255, 0.363);
+}

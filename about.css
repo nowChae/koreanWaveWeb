@@ -1,0 +1,16 @@
+#menu_title{
+  color: #16123652;
+  font-size: 3.5rem;
+  font-weight: 600 ;
+  text-align: center;
+  margin-top: 2rem;
+}
+#menu_li{
+  display: inline-block;
+  color:rgba(227, 227, 227, 0.911) ;
+  font-size: 5rem;
+  font-weight: 600 ;
+  margin: 2rem 0 0 4rem;
+  padding-right: 4rem;
+  border-bottom: 3px solid rgba(227, 227, 227, 0.911);
+}

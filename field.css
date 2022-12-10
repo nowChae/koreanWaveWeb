@@ -1,0 +1,79 @@
+#menu_title{
+  color: #16123652;
+  font-size: 4rem;
+  font-weight: 600 ;
+  text-align: center;
+  margin-top: 2rem;
+}
+#menu_li{
+  display: inline-block;
+  color:rgba(227, 227, 227, 0.911) ;
+  font-size: 5rem;
+  font-weight: 600 ;
+  margin: 2rem 0 0 4rem;
+  padding-right: 4rem;
+  border-bottom: 3px solid rgba(227, 227, 227, 0.911);
+}
+#up{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#famous{
+  background-color: #16123652;
+  color: rgba(199, 199, 199, 0.911) ;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 2rem 0 0 5rem;
+  display: inline-block;
+  text-align: center;
+  padding: .7rem;
+  border-radius: 2rem;
+}
+#famous_title{
+  font-size: 1.4rem;
+  padding-bottom: .5rem;
+}
+.reason{
+  display: inline-block;
+  background-color: #a1a1a152;
+  border-radius: 0 0 1rem 1rem ;
+  color : rgb(224, 223, 223) ;
+  padding-top: .5rem;
+  padding-bottom: .4rem;
+  width: 20rem;
+}
+#main_title{
+  font-size: 2.5rem;
+  text-align: center;
+  color: #161236c3;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+#main_content{
+  width: 80%;
+  margin: auto;
+  font-size: 1.1rem;
+  color: #161236af;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+#main_image{
+  display: block;
+  margin: auto;
+  background-color: #2b2b2b;
+  padding: 2rem;
+  width: 50%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+#main_image:hover{
+  background-color: #212121;
+}
+#main_tool{
+  width: 80%;
+  margin: 2rem auto;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  background-color: rgba(240, 240, 240, 0.744);
+}

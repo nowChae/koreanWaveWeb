@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="menugrid.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="country.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>2022 한류 트렌드</title>
+</head>
+<body>
+  <header>
+    
+    <div id="menu_tool">
+      <button id="color_button" type="button" onclick="color_change();">purple</button>
+      <a href="index.html"><img id="world_img" src="world-wide-web.png"></a>
+    <div class="menu_li">
+      <span class="menu_lname">ABOUT</span>
+      <ul class="menu">
+        <li><a href="koreanwave.html">한류란?</a></li>
+      </ul>
+    </div>
+    <div class="menu_li">
+      <span class="menu_lname">FIELD</span>
+      <ul class="menu">
+        <li><a href="drama.html">드라마</a></li>
+        <li><a href="movie.html">영화</a></li>
+        <li><a href="k-pop.html">K-POP</a></li>
+        <li><a href="food.html">음식</a></li>
+      </ul>
+    </div>
+    <div class="menu_li">
+      <span class="menu_lname">COUNTRY</span>
+      <ul class="menu">
+        <li><a href="asia.html">아시아·오세아니아</a></li>
+        <li><a href="america.html">미주</a></li>
+        <li><a href="europe.html">유럽</a></li>
+        <li><a href="middleeast.html">중동</a></li>
+        <li><a href="africa.html">아프리카</a></li>
+      </ul>
+    </div>
+    </div>
+  </header>
+  <main>
+    <leftside>
+      <div id="menu_title">COUNTRY</div>
+    </leftside>
+    <maincontent>
+      <div id="menu_li">아프리카</div>
+      <div class="area_poll">
+        <h1 id="poll_title">한류 인식</h1>
+        <div class="box_poll">
+          <p class="txt_question">아프리카</p>
+          <div class="box_poll_graph">
+            <ul class="list_poll_graph">
+              <li>
+                <span class="txt">IT제품/브랜드</span>
+                <span class="txt_num">11.3</span>
+              </li>
+              <li>
+                <span class="txt">한식</span>
+                <span class="txt_num">10.0</span>
+              </li>
+              <li>
+                <span class="txt">영화</span>
+                <span class="txt_num">7.8</span>
+              </li>
+              <li>
+                <span class="txt">태권도</span>
+                <span class="txt_num">7.5</span>
+              </li>
+              <li>
+                <span class="txt">K-Pop, 패션</span>
+                <span class="txt_num">5.5</span>
+              </li>
+            </ul>            
+            <div class="score_list"></div>
+          </div>
+        </div>
+        <!-- //문항 -->
+      </div>
+
+    </maincontent>
+    
+    <rightside>
+
+    </rightside>
+  </main>
+
+  <script>
+    const part = document.querySelectorAll(".box_poll_graph");
+    const questions = document.querySelectorAll(".list_poll_graph");
+    const color = ["#F57F60", "#FEBF72", "#A9D18E", "#76BDE4", "#7F7896"];
+    let rect = questions[0].offsetWidth; 
+
+
+for(let i=0; i < questions.length ; i++ ){
+    //** 그래프 그리기
+    const lis = questions[i].querySelectorAll("li");
+    const scoreValue = new Array();
+    rect = questions[i].style.width = rect/rect * 20;
+   
+    for(let b = 0; b < lis.length ; b++ ){
+        let bar = document.createElement("div");
+        let num = null;
+        let width = null;
+
+        num = lis[b].querySelector(".txt_num").innerHTML;
+        scoreValue.push(+ num);
+        bar.className = "bar";
+        bar.style.width = `${scoreValue[b] / rect * 100}%`; 
+        bar.style.height = "3rem";
+        bar.style.backgroundColor = color[b];
+        lis[b].append(bar);
+    }
+ 
+}
+  </script>
+  <script>
+    function color_change(){
+      const style = window.getComputedStyle(document.body);
+      const color = style.backgroundColor;
+      if (color == 'rgba(22, 18, 54, 0.765)'){
+        document.body.style.backgroundColor = 'rgba(0, 10, 46, 0.765)';
+        const btnElement = document.getElementById('color_button');
+        btnElement.innerText = 'blue';
+      }
+      if(color == 'rgba(0, 10, 46, 0.765)'){
+        document.body.style.backgroundColor = 'rgba(22, 18, 54, 0.765)';
+        const btnElement = document.getElementById('color_button');
+        btnElement.innerText = 'purple';
+      }
+    }
+  </script>
+</body>
+</html>

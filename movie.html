@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="menugrid.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="field.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>2022 한류 트렌드</title>
+</head>
+<body>
+  <header>
+    
+    <div id="menu_tool">
+      <button id="color_button" type="button" onclick="color_change();">purple</button>
+      <a href="index.html"><img id="world_img" src="world-wide-web.png"></a>
+    <div class="menu_li">
+      <span class="menu_lname">ABOUT</span>
+      <ul class="menu">
+        <li><a href="koreanwave.html">한류란?</a></li>
+      </ul>
+    </div>
+    <div class="menu_li">
+      <span class="menu_lname">FIELD</span>
+      <ul class="menu">
+        <li><a href="drama.html">드라마</a></li>
+        <li><a href="movie.html">영화</a></li>
+        <li><a href="k-pop.html">K-POP</a></li>
+        <li><a href="food.html">음식</a></li>
+      </ul>
+    </div>
+    <div class="menu_li">
+      <span class="menu_lname">COUNTRY</span>
+      <ul class="menu">
+        <li><a href="asia.html">아시아·오세아니아</a></li>
+        <li><a href="america.html">미주</a></li>
+        <li><a href="europe.html">유럽</a></li>
+        <li><a href="middleeast.html">중동</a></li>
+        <li><a href="africa.html">아프리카</a></li>
+      </ul>
+    </div>
+    </div>
+  </header>
+  <main>
+    <leftside>
+      <div id="menu_title">FIELD</div>
+    </leftside>
+    <maincontent>
+      <div id="up">
+        <div id="menu_li">영화</div>
+        <div id="famous">
+          <div id="famous_title">인기 요인</div>
+          <div class="reason">
+            <span>1위</span><br><span>짜임새 있는 스토리</span><br><span>17.3%</span>
+          </div>
+          <div class="reason">
+            <span>2위</span><br><span>한국 문화 간접 경험</span><br><span>13.5%</span>
+          </div>
+        </div>
+      </div>
+      
+
+      <div id="main_tool">
+        <h2 id="main_title"> 영화 &lt; 기생충 &gt;이 불러온 북미 한류  </h2>
+        <div id="main_content">
+          <p>
+            영화 &lt; 기생충 &gt; 는 대박 흥행을 한 아시아 영화 중에서도 유례가 없을 정도로 아시아, 북미, 유럽, 남미, 오세아니아를 가리지 않고 다양한 문화권에서 골고루 흥행한 작품이다.
+          </p>
+          <p>
+            2019sus 10월 28일 할리우드 리포터 집계 기준으로 월드와이드 1억 달러를 돌파했다. 한국 영화 중에서는 명량, 국제시장, 부산행, 신과 함께-죄와 벌, 신과 함께-인과 연, 극한직업에 이어 7번째이다. 대부분 한국 영화 시장에서 수익을 거둬 1억 달러를 돌파한 다른 작품들과는 달리, &lt; 기생충 &gt;는 총 극장 수익의 절반 이상이 해외에서의 수익이다.
+          </p>
+        </div>
+        <a href="https://www.youtube.com/watch?v=D8tJM8HFqoY" target="_blank"><img id="main_image" src="기생충 뉴스.png" alt="이미지를 누르면 유튜브 링크로 이동합니다."></a>
+      </div>
+      
+    </maincontent>
+    
+    <rightside>
+
+    </rightside>
+  </main>
+  <script>
+    function color_change(){
+      const style = window.getComputedStyle(document.body);
+      const color = style.backgroundColor;
+      if (color == 'rgba(22, 18, 54, 0.765)'){
+        document.body.style.backgroundColor = 'rgba(0, 10, 46, 0.765)';
+        const btnElement = document.getElementById('color_button');
+        btnElement.innerText = 'blue';
+      }
+      if(color == 'rgba(0, 10, 46, 0.765)'){
+        document.body.style.backgroundColor = 'rgba(22, 18, 54, 0.765)';
+        const btnElement = document.getElementById('color_button');
+        btnElement.innerText = 'purple';
+      }
+    }
+  </script>
+</body>
+</html>

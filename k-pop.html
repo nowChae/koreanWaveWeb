@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="menugrid.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="field.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>2022 한류 트렌드</title>
+</head>
+<body>
+  <header>
+    
+    <div id="menu_tool">
+      <button id="color_button" type="button" onclick="color_change();">purple</button>
+      <a href="index.html"><img id="world_img" src="world-wide-web.png"></a>
+    <div class="menu_li">
+      <span class="menu_lname">ABOUT</span>
+      <ul class="menu">
+        <li><a href="koreanwave.html">한류란?</a></li>
+      </ul>
+    </div>
+    <div class="menu_li">
+      <span class="menu_lname">FIELD</span>
+      <ul class="menu">
+        <li><a href="drama.html">드라마</a></li>
+        <li><a href="movie.html">영화</a></li>
+        <li><a href="k-pop.html">K-POP</a></li>
+        <li><a href="food.html">음식</a></li>
+      </ul>
+    </div>
+    <div class="menu_li">
+      <span class="menu_lname">COUNTRY</span>
+      <ul class="menu">
+        <li><a href="asia.html">아시아·오세아니아</a></li>
+        <li><a href="america.html">미주</a></li>
+        <li><a href="europe.html">유럽</a></li>
+        <li><a href="middleeast.html">중동</a></li>
+        <li><a href="africa.html">아프리카</a></li>
+      </ul>
+    </div>
+    </div>
+  </header>
+  <main>
+    <leftside>
+      <div id="menu_title">FIELD</div>
+    </leftside>
+    <maincontent>
+      <div id="up">
+        <div id="menu_li">K-POP</div>
+        <div id="famous">
+          <div id="famous_title">인기 요인</div>
+          <div class="reason">
+            <span>1위</span><br><span>중독성 강한 후렴구/리듬</span><br><span>18.3%</span>
+          </div>
+          <div class="reason">
+            <span>2위</span><br><span>가수/그룹의 매력적인 외모/스타일</span><br><span>14.8%</span>
+          </div>
+        </div>
+      </div>
+      
+
+      <div id="main_tool">
+        <h2 id="main_title"> 세계 각국 한류 콘서트 열풍 </h2>
+
+        <div id="main_content">
+          <p>
+            영화 뿐 아니라 우리 음악 또한 국경을 넓히고 있다. 코로나 이 후 전 세계가 일상을 되찾으면서 우리 가수의 해외 공연이 늘었고, 우리 문화에 대한 관심도 커졌다.
+          </p>
+          <p>
+            지난 해 한류를 통한 총 수출액은 14조 7천 860억원으로 올해는 전년보다 2천억 원 넘게 증가했다. 또한 동남아와 일본에 이어, 미국, 그리고 유럽까지 확산한 한류가 우리 경제에 미치는 영향이 날로 커지고 있다.
+          </p>
+        </div>
+        <a href="https://www.youtube.com/watch?v=aZlmqpfDbjQ" target="_blank"><img id="main_image" src="k-pop 뉴스.png" alt="이미지를 누르면 유튜브 링크로 이동합니다."></a>
+      </div>
+      
+    </maincontent>
+    
+    <rightside>
+
+    </rightside>
+  </main>
+  <script>
+    function color_change(){
+      const style = window.getComputedStyle(document.body);
+      const color = style.backgroundColor;
+      console.log(color);
+      if (color == 'rgba(22, 18, 54, 0.765)'){
+        document.body.style.backgroundColor = 'rgba(0, 10, 46, 0.765)';
+        const btnElement = document.getElementById('color_button');
+        btnElement.innerText = 'blue';
+      }
+      if(color == 'rgba(0, 10, 46, 0.765)'){
+        document.body.style.backgroundColor = 'rgba(22, 18, 54, 0.765)';
+        const btnElement = document.getElementById('color_button');
+        btnElement.innerText = 'purple';
+      }
+    }
+  </script>
+</body>
+</html>

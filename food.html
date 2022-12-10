@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="menugrid.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="field.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>2022 한류 트렌드</title>
+</head>
+<body>
+  <header>
+    
+    <div id="menu_tool">
+      <button id="color_button" type="button" onclick="color_change();">purple</button>
+      <a href="index.html"><img id="world_img" src="world-wide-web.png"></a>
+    <div class="menu_li">
+      <span class="menu_lname">ABOUT</span>
+      <ul class="menu">
+        <li><a href="koreanwave.html">한류란?</a></li>
+      </ul>
+    </div>
+    <div class="menu_li">
+      <span class="menu_lname">FIELD</span>
+      <ul class="menu">
+        <li><a href="drama.html">드라마</a></li>
+        <li><a href="movie.html">영화</a></li>
+        <li><a href="k-pop.html">K-POP</a></li>
+        <li><a href="food.html">음식</a></li>
+      </ul>
+    </div>
+    <div class="menu_li">
+      <span class="menu_lname">COUNTRY</span>
+      <ul class="menu">
+        <li><a href="asia.html">아시아·오세아니아</a></li>
+        <li><a href="america.html">미주</a></li>
+        <li><a href="europe.html">유럽</a></li>
+        <li><a href="middleeast.html">중동</a></li>
+        <li><a href="africa.html">아프리카</a></li>
+      </ul>
+    </div>
+    </div>
+  </header>
+  <main>
+    <leftside>
+      <div id="menu_title">FIELD</div>
+    </leftside>
+    <maincontent>
+      <div id="up">
+        <div id="menu_li">음식</div>
+        <div id="famous">
+          <div id="famous_title">인기 요인</div>
+          <div class="reason">
+            <span>1위</span><br><span>맛</span><br><span>33.8%</span>
+          </div>
+          <div class="reason">
+            <span>2위</span><br><span>한국 문화콘텐츠의 한식/식문화 경험</span><br><span>15.1%</span>
+          </div>
+        </div>
+      </div>
+      
+      <div id="main_tool">
+        <h2 id="main_title">  세계는 지금 'K-푸드' 열풍 </h2>
+
+        <div id="main_content">
+          <p>
+            한국 영화가 전 세계적으로 히트를 하면서 그 속에 등장한 한국 음식들이 인기를 끌고 있다. 그 뿐만 아니라 다양한 한국 음식이 해외에서 잘 팔리고 있어 이제는 자신있게 K-푸드 열풍이라 할 수 있다.
+          </p>
+          <p>
+            대표적인 K-푸드로는 김치, 우유 탄산음료, 빵, 치킨, 라면 등이 있다. 이런 K-푸드들이 해외 매출에 많은 영향력을 보이고 있다.  
+          </p>
+        </div>
+        <a href="https://www.youtube.com/watch?v=HDV6CDZ18z8" target="_blank"><img id="main_image" src="한류 음식 뉴스.png" alt="이미지를 누르면 유튜브 링크로 이동합니다."></a>
+      </div>
+      
+    </maincontent>
+    
+    <rightside>
+
+    </rightside>
+  </main>
+  <script>
+    function color_change(){
+      const style = window.getComputedStyle(document.body);
+      const color = style.backgroundColor;
+      console.log(color);
+      if (color == 'rgba(22, 18, 54, 0.765)'){
+        document.body.style.backgroundColor = 'rgba(0, 10, 46, 0.765)';
+        const btnElement = document.getElementById('color_button');
+        btnElement.innerText = 'blue';
+      }
+      if(color == 'rgba(0, 10, 46, 0.765)'){
+        document.body.style.backgroundColor = 'rgba(22, 18, 54, 0.765)';
+        const btnElement = document.getElementById('color_button');
+        btnElement.innerText = 'purple';
+      }
+    }
+  </script>
+</body>
+</html>

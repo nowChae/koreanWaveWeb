@@ -1,0 +1,26 @@
+#main_content{
+  font-size: 1.1rem;
+  color: #161236af;
+  font-weight: 400;
+  margin-bottom: 2rem;
+
+  width: 80%;
+  margin: 2rem auto;
+  padding: 0.2rem 1rem;
+  border-radius: 1rem;
+  background-color: rgba(240, 240, 240, 0.744);
+}
+#image_tool{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  
+}
+.image{
+  width: 22%;
+  margin: .5rem;
+}
+.image:hover{
+  width: 30%;
+  box-shadow: 5px 5px 5px 5px gray;
+}
